@@ -1,0 +1,29 @@
+﻿@model CardGame.Models.GamingCards
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <table>
+        <h4> Coding Exercise</h4>
+        <tr>
+            <td>Enter list of cards: </td>
+            <td>@Html.TextAreaFor(m => m.CardList)</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="color: green; font: bold">@ViewBag.Message</td>
+        </tr>
+
+        <tr>
+            <br/>
+            <td colspan="2">
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+
+    </table>
+}

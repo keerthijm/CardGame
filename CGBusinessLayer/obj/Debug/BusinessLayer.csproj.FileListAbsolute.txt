@@ -1,0 +1,6 @@
+D:\workdir\VisualStudioApp\CardGame\CGBusinessLayer\bin\Debug\BusinessLayer.dll
+D:\workdir\VisualStudioApp\CardGame\CGBusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\workdir\VisualStudioApp\CardGame\CGBusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\workdir\VisualStudioApp\CardGame\CGBusinessLayer\obj\Debug\BusinessLayer.dll
+D:\workdir\VisualStudioApp\CardGame\CGBusinessLayer\obj\Debug\BusinessLayer.pdb
+D:\workdir\VisualStudioApp\CardGame\CGBusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
