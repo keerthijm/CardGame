@@ -149,7 +149,7 @@ namespace BusinessLayer.Tests
             Assert.AreEqual(7, actualResult);
         }
 
-        [TestMethod]
+         [TestMethod]
         public void TestMethodTCTDTHTS()
         {
             var cards = new List<Card>
@@ -163,7 +163,26 @@ namespace BusinessLayer.Tests
             IOperateCard operateCard = new OperateCard();
             var actualResult = operateCard.CalculateScore(cards);
 
-            Assert.AreEqual(100, actualResult);
+            Assert.AreEqual(500, actualResult);
         }
+
+        [TestMethod]
+        public void TestMethodACADAHAS()
+        {
+            var cards = new List<Card>
+            {
+                new Card {Suit = Suit.Club, CardNumber = CardNumber.Ace}, // 14* 1 = 14
+                new Card {Suit = Suit.Diamond, CardNumber = CardNumber.Ace}, // 14* 2 = 28
+                new Card {Suit = Suit.Heart, CardNumber = CardNumber.Ace}, // 14* 3 = 42
+                new Card {Suit = Suit.Spade, CardNumber = CardNumber.Ace} // 14* 4 = 56
+                // Total is 140 + Additional 400
+            };
+
+            IOperateCard operateCard = new OperateCard();
+            var actualResult = operateCard.CalculateScore(cards);
+
+            Assert.AreEqual(540, actualResult);
+        }
+
     }
 }
